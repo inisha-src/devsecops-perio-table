@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* HEADER */
+header{
+    text-align:center;
+    padding:30px 20px;
+}
+
+header h1{
+    font-size:40px;
+    color:#38bdf8;
+}
+
+header p{
+    margin-top:10px;
+    color:#cbd5e1;
+}
+
+/* SEARCH */
+.search-container{
+    display:flex;
+    justify-content:center;
+    margin:20px;
+}
+
+.search-container input{
+    width:300px;
+    padding:12px;
+    border-radius:10px;
+    border:none;
+    outline:none;
+}
+
+/* LEGEND */
+.legend{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:20px;
+}
+
+.legend .item{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    font-size:14px;
+}
+
+.legend span{
+    width:14px;
+    height:14px;
+    display:inline-block;
+    border-radius:3px;
+}
+
+/* CATEGORY COLORS */
+.version{background:#3b82f6;}
+.build{background:#22c55e;}
+.cicd{background:#f59e0b;}
+.container{background:#a855f7;}
+.cloud{background:#06b6d4;}
+.monitor{background:#f97316;}
+.artifact{background:#84cc16;}
+
+/* TABLE GRID */
+.table{
+    display:grid;
+    grid-template-columns:repeat(10, 120px);
+    justify-content:center;
+    gap:12px;
+    padding:20px;
+}
+
+/* TOOL BOX */
+.tool{
+    padding:10px;
+    border-radius:10px;
+    text-align:center;
+    cursor:pointer;
+    transition:0.3s;
+    color:white;
+    font-size:14px;
+}
+
+.tool h3{
+    font-size:16px;
+}
+
+.tool p{
+    font-size:11px;
+    opacity:0.8;
+}
+
+/* HOVER EFFECT */
+.tool:hover{
+    transform:scale(1.08);
+    box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* MODAL BACKDROP */
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    justify-content:center;
+    align-items:center;
+    z-index:1000;
+}
+
+/* MODAL BOX */
+.modal-content{
+    background:white;
+    color:black;
+    padding:20px;
+    border-radius:12px;
+    width:300px;
+    text-align:center;
+    animation:pop 0.25s ease;
+}
+
+/* ANIMATION */
+@keyframes pop{
+    from{
+        transform:scale(0.7);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+/* BUTTONS */
+.modal-content button{
+    margin:10px;
+    padding:8px 12px;
+    cursor:pointer;
+    border:none;
+    border-radius:6px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .table{
+        grid-template-columns:repeat(5, 1fr);
+    }
+}
