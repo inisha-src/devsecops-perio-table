@@ -1,32 +1,45 @@
 [
-  {
-    "name": "Git",
-    "category": "version",
-    "desc": "Version Control System",
-    "url": "https://git-scm.com/"
-  },
-  {
-    "name": "Docker",
-    "category": "container",
-    "desc": "Container Platform",
-    "url": "https://www.docker.com/"
-  },
-  {
-    "name": "Jenkins",
-    "category": "cicd",
-    "desc": "Automation Server",
-    "url": "https://www.jenkins.io/"
-  },
-  {
-    "name": "Kubernetes",
-    "category": "cloud",
-    "desc": "Container Orchestration",
-    "url": "https://kubernetes.io/"
-  },
-  {
-    "name": "SonarQube",
-    "category": "monitor",
-    "desc": "Code Quality Tool",
-    "url": "https://www.sonarsource.com/products/sonarqube/"
-  }
+  { "name": "Git", "category": "version", "desc": "Version Control", "url": "https://git-scm.com/" },
+  { "name": "GitHub", "category": "version", "desc": "Code Hosting", "url": "https://github.com/" },
+  { "name": "GitLab", "category": "version", "desc": "DevOps Platform", "url": "https://gitlab.com/" },
+  { "name": "Bitbucket", "category": "version", "desc": "Git Hosting", "url": "https://bitbucket.org/" },
+
+  { "name": "Maven", "category": "build", "desc": "Build Tool", "url": "https://maven.apache.org/" },
+  { "name": "Gradle", "category": "build", "desc": "Build Automation", "url": "https://gradle.org/" },
+  { "name": "Ant", "category": "build", "desc": "Build Tool", "url": "https://ant.apache.org/" },
+
+  { "name": "Jenkins", "category": "cicd", "desc": "CI/CD Automation", "url": "https://www.jenkins.io/" },
+  { "name": "GitHub Actions", "category": "cicd", "desc": "CI/CD Pipelines", "url": "https://github.com/features/actions" },
+  { "name": "GitLab CI", "category": "cicd", "desc": "CI/CD System", "url": "https://docs.gitlab.com/ee/ci/" },
+  { "name": "CircleCI", "category": "cicd", "desc": "CI Platform", "url": "https://circleci.com/" },
+  { "name": "Travis CI", "category": "cicd", "desc": "CI Service", "url": "https://travis-ci.org/" },
+
+  { "name": "Docker", "category": "container", "desc": "Containers", "url": "https://www.docker.com/" },
+  { "name": "Podman", "category": "container", "desc": "Container Engine", "url": "https://podman.io/" },
+  { "name": "Kubernetes", "category": "container", "desc": "Orchestration", "url": "https://kubernetes.io/" },
+  { "name": "Helm", "category": "container", "desc": "K8s Packages", "url": "https://helm.sh/" },
+  { "name": "OpenShift", "category": "container", "desc": "Kubernetes Platform", "url": "https://www.redhat.com/en/technologies/cloud-computing/openshift" },
+
+  { "name": "Terraform", "category": "cloud", "desc": "IaC Tool", "url": "https://www.terraform.io/" },
+  { "name": "Ansible", "category": "cloud", "desc": "Automation", "url": "https://www.ansible.com/" },
+  { "name": "Pulumi", "category": "cloud", "desc": "Infrastructure as Code", "url": "https://www.pulumi.com/" },
+  { "name": "AWS", "category": "cloud", "desc": "Cloud Platform", "url": "https://aws.amazon.com/" },
+  { "name": "Azure", "category": "cloud", "desc": "Cloud Services", "url": "https://azure.microsoft.com/" },
+
+  { "name": "SonarQube", "category": "security", "desc": "Code Quality", "url": "https://www.sonarqube.org/" },
+  { "name": "Snyk", "category": "security", "desc": "Security Scanning", "url": "https://snyk.io/" },
+  { "name": "OWASP ZAP", "category": "security", "desc": "Security Testing", "url": "https://www.zaproxy.org/" },
+
+  { "name": "Prometheus", "category": "monitor", "desc": "Metrics", "url": "https://prometheus.io/" },
+  { "name": "Grafana", "category": "monitor", "desc": "Dashboards", "url": "https://grafana.com/" },
+  { "name": "Datadog", "category": "monitor", "desc": "Monitoring", "url": "https://www.datadoghq.com/" },
+  { "name": "Splunk", "category": "monitor", "desc": "Log Analytics", "url": "https://www.splunk.com/" },
+
+  { "name": "Nexus", "category": "artifact", "desc": "Artifact Repo", "url": "https://www.sonatype.com/products/nexus-repository" },
+  { "name": "JFrog", "category": "artifact", "desc": "Artifact Manager", "url": "https://jfrog.com/" },
+  { "name": "Docker Hub", "category": "artifact", "desc": "Container Registry", "url": "https://hub.docker.com/" },
+  { "name": "ECR", "category": "artifact", "desc": "AWS Registry", "url": "https://aws.amazon.com/ecr/" },
+
+  { "name": "ArgoCD", "category": "cicd", "desc": "GitOps Tool", "url": "https://argo-cd.readthedocs.io/" },
+  { "name": "FluxCD", "category": "cicd", "desc": "GitOps Controller", "url": "https://fluxcd.io/" }
 ]
