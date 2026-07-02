@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Git",
+    "category": "version",
+    "desc": "Version Control System",
+    "url": "https://git-scm.com/"
+  },
+  {
+    "name": "Docker",
+    "category": "container",
+    "desc": "Container Platform",
+    "url": "https://www.docker.com/"
+  },
+  {
+    "name": "Jenkins",
+    "category": "cicd",
+    "desc": "Automation Server",
+    "url": "https://www.jenkins.io/"
+  },
+  {
+    "name": "Kubernetes",
+    "category": "cloud",
+    "desc": "Container Orchestration",
+    "url": "https://kubernetes.io/"
+  },
+  {
+    "name": "SonarQube",
+    "category": "monitor",
+    "desc": "Code Quality Tool",
+    "url": "https://www.sonarsource.com/products/sonarqube/"
+  }
+]
