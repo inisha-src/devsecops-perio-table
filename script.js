@@ -17,7 +17,7 @@ fetch("tools.json")
         renderTools(data);
     });
 
-// RENDER TOOLS
+// RENDER
 function renderTools(data){
     table.innerHTML = "";
 
@@ -48,27 +48,25 @@ function renderTools(data){
 search.addEventListener("input", () => {
     const value = search.value.toLowerCase();
 
-    const filtered = toolsData.filter(tool =>
-        tool.name.toLowerCase().includes(value) ||
-        tool.desc.toLowerCase().includes(value)
+    const filtered = toolsData.filter(t =>
+        t.name.toLowerCase().includes(value) ||
+        t.desc.toLowerCase().includes(value)
     );
 
     renderTools(filtered);
 });
 
-// CLOSE BUTTON
+// CLOSE
 closeBtn.addEventListener("click", () => {
     modal.style.display = "none";
 });
 
-// CLOSE ON OUTSIDE CLICK
 modal.addEventListener("click", (e) => {
     if (e.target === modal) {
         modal.style.display = "none";
     }
 });
 
-// ESC KEY CLOSE
 document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
         modal.style.display = "none";
